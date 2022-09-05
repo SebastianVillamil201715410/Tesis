@@ -1,10 +1,9 @@
 const { DataTypes, Model } = require("sequelize");
 const sequelize = require("../lib/sequelize");
-const BAC01 = require("./BAC01");
 
-class BAC02 extends Model {}
+class BAC18 extends Model {}
 
-BAC02.init(
+BAC18.init(
     {
       id: {
         type: DataTypes.NUMBER,
@@ -12,10 +11,6 @@ BAC02.init(
         allowNull: false,
       },
       nombre: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      objetivoNegocio: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -27,11 +22,8 @@ BAC02.init(
     {
       sequelize,
       timestamps: false,
-      modelName: "BAC02",
+      modelName: "BAC18",
     }
   );
   
-  BAC02.belongsTo(BAC01,{foreignKey: "actorId",});
-
-  module.exports = BAC02;
-  
+  module.exports = BAC18;
