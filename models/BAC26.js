@@ -12,12 +12,10 @@ BAC26.init(
       },
       nombre: {
         type: DataTypes.STRING,
-        primaryKey: true,
         allowNull: false,
       },
       descripcion: {
         type: DataTypes.STRING,
-        primaryKey: true,
         allowNull: false,
       },
     },

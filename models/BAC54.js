@@ -17,7 +17,6 @@ BAC54.init(
       },
       negocios: {
         type: DataTypes.STRING,
-        primaryKey:true,
         allowNull: false,
       },
       idLineaNegocio: {

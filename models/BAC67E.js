@@ -11,6 +11,10 @@ BAC67E.init(
         primaryKey: true,
         allowNull: false,
       },
+      nombre: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       descripcion: {
         type: DataTypes.STRING,
         allowNull: false,

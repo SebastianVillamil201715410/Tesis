@@ -4,9 +4,8 @@ const BAC01 = require("../models/BAC01");
 
 var router = express.Router();
 
-/*
 const schema = Joi.object({
-    nombre: Joi.number().min(0).required(),
+    nombre: Joi.string().min(0).required(),
     tipo: Joi.string().min(0).required(),
     descripcion: Joi.string().min(0).required(),
   });
@@ -68,6 +67,6 @@ router.get("/:id", function (req, res, next) {
       }
     });
   });
-  */
+  
   module.exports = router;
   

@@ -43,7 +43,7 @@ BAC56Cargos.init(
     }
   );
   
-  BAC56Cargos.belongsTo(BAC56Funciones,{foreignKey: "principalesFunciones",});
+  BAC56Cargos.belongsTo(BAC56Funciones,{foreignKey: "principalesFuncionesId",});
 
   module.exports = BAC56Cargos;
   
